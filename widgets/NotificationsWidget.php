@@ -269,7 +269,17 @@ class NotificationsWidget extends Widget
                                                             <span id="{verAlertasId}-contador" class="badge">0</span> Alertas  
                                                         </button>' .                
                                                     '</div>'.
-                                                '</div>';
+                                                '</div>'.
+                                                '<br>'.
+                                                '<div id = "mostrarnotif" class ="hidden">'. 
+                                                '<div class="col-xs-12">'. 
+                                                    '<div class="pull-left" style="font-size:14px;font-weight:bold;margin-left:10px;">{title}</div>' . 
+                                                    '<button id="{readAllId}" class="btn btn-xs btn-link pull-right" style="color:#3399ff;" data-keepOpenOnClick>Leídas</button>' . 
+                                                    '<button id="{unreadAllId}" class="btn btn-xs btn-link pull-right" style="color:#3399ff;" data-keepOpenOnClick>No leídas</button>' . 
+                                                    '<label style="font-size:12px;padding-top:1px;" class="pull-right">Marcar todas como</label>' .
+                                                '</div>'.
+                                                '</div>'                                                        
+                                                ;
                 }
         }
         

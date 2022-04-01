@@ -417,6 +417,7 @@ var Notifications = (function(options) {
 
 		if(self.opts.viewNotificacionesSelector != null && self.opts.viewNotificacionesSelector != ""){
 			$('body').on('click', self.opts.viewNotificacionesSelector, function(){
+				$('#mostrarnotif').removeClass('hidden');
 				clearTimeout(self.currentTimer);
 				seccion_activa = SECCION_NOTIF
 				pollSection(seccion_activa);
@@ -425,6 +426,7 @@ var Notifications = (function(options) {
 
 		if(self.opts.viewAlertasSelector != null && self.opts.viewAlertasSelector != ""){
 			$('body').on('click', self.opts.viewAlertasSelector, function(){
+				$('#mostrarnotif').addClass('hidden');
 				clearTimeout(self.currentTimer);
 				seccion_activa = SECCION_ALERTAS
 				pollSection(seccion_activa)
